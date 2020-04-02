@@ -19,7 +19,7 @@ attr_accessor :name
   def self.clear_all
     @@all = []
   end
-  def save(name)
+  def self.save
    dog = self.new
    dog.name = name
   @@all<< dog
