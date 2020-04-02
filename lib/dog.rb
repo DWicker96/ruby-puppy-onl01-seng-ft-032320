@@ -11,6 +11,11 @@ attr_accessor :name
 			puts dog.name
 		end
 	end
+
+  def self.print_all
+     self.each do |dog|
+       puts @@all
+  end
   def save(name)
   @@all<< self
   end
