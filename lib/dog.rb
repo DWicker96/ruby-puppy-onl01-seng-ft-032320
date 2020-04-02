@@ -13,16 +13,16 @@ attr_accessor :name
 	end
 
   def self.print_all
-     @@all.each do |dog|
-       puts @name
-       @name = dog.name
-     end
+     self.all.each{|dog| puts "#{dog.name}"}
   end
 
   def self.clear_all
     @@all = []
   end
-  def save
+  def save(name)
+   dog = self.new
+   dog.name = name
   @@all<< self.new
+  
   end
 end
