@@ -4,7 +4,7 @@ attr_accessor :name
 
   def initialize(name)
     @name = name
-    @@all <<self
+    save
   end
   def self.all
 		@@all.each do |dog|
@@ -20,9 +20,6 @@ attr_accessor :name
     @@all = []
   end
   def save
-   dog = self.new
-   dog.name = name
-  @@all<< dog
-
+   @@all <<self
   end
 end
