@@ -17,6 +17,10 @@ attr_accessor :name
        puts @@all
      end
   end
+
+  def self.clear_all
+    @@all = []
+  end
   def save(name)
   @@all<< self
   end
