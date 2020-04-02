@@ -23,6 +23,6 @@ attr_accessor :name
    dog = self.new
    dog.name = name
   @@all<< self.new
-  
+
   end
 end
