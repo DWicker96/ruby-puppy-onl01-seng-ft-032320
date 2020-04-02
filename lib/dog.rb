@@ -23,6 +23,6 @@ attr_accessor :name
     @@all = []
   end
   def self.save
-  @@all<< self
+  @@all<< self.new
   end
 end
