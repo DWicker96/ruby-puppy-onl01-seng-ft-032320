@@ -22,7 +22,7 @@ attr_accessor :name
   def self.clear_all
     @@all = []
   end
-  def self.save
+  def save
   @@all<< self.new
   end
 end
