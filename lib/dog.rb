@@ -22,7 +22,7 @@ attr_accessor :name
   def save(name)
    dog = self.new
    dog.name = name
-  @@all<< self.new
+  @@all<< dog 
 
   end
 end
